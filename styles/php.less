@@ -5,7 +5,7 @@
         color: @yellow;
       }
       &.function {
-        color: @red;
+        color: @yellow;
       }
     }
     &.modifier {
@@ -15,7 +15,8 @@
   .entity {
     &.name {
       &.type.class {
-        color: @syntax-text-color;
+        // color: @syntax-text-color;
+        color: @magenta;
       }
       &.function {
         color: @syntax-text-color;
@@ -48,7 +49,7 @@
   }
   .support.function {
     &.construct {
-      color: @yellow;
+      color: @orange;
     }
     &.array {
       color: @green;
@@ -64,7 +65,20 @@
       }
     }
     &.other {
-      color: @red;
+      color: @yellow;
+      &.phpdoc {
+        color: @magenta;
+      }
+    }
+  }
+  .support {
+    // color: @syntax-text-color;
+    color: @orange;
+    &.use {
+      color: @cyan;
+    }
+    &.class {
+      color: @yellow;
     }
   }
 }
