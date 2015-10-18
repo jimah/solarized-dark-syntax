@@ -39,6 +39,9 @@
   }
   .meta {
     color: @blue;
+    &.brace {
+      color: @syntax-text-color;
+    }
   }
   .support {
     &.function {
@@ -49,5 +52,13 @@
     &.directive {
       color: @magenta;
     }
+  }
+  .entity {
+    &.function {
+      color: @syntax-text-color;
+    }
+  }
+  .constant {
+    color: @blue;
   }
 }
