@@ -1,5 +1,8 @@
 .source.js {
   .constant {
+    color: @magenta;
+  }
+  .constant.other {
     color: @green;
   }
 
@@ -15,6 +18,9 @@
     color: @yellow;
   }
   .entity.name {
+    color: @syntax-text-color;
+  }
+  .entity.name.function {
     color: @syntax-text-color;
   }
 
@@ -44,6 +50,12 @@
   .variable {
     color: @blue;
   }
+  .variable.other.object {
+    color: @syntax-text-color;
+  }
+  .variable.other.property {
+    color: @syntax-text-color;
+  }
   .variable.parameter {
     color: @syntax-text-color;
   }
@@ -53,15 +65,15 @@
   }
 
   .support.function {
-    color: @violet;
-  }
-  .support.constant {
     color: @syntax-text-color;
   }
-
-  .constant.numeric {
-    color: @green;
+  .support.constant {
+    color: @orange;
   }
+  //
+  // .constant.numeric {
+  //   color: @green;
+  // }
 
   .punctuation.terminator.statement {
     color: @syntax-text-color;
