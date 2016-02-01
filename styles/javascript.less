@@ -21,7 +21,8 @@
     color: @syntax-text-color;
   }
   .entity.name.function {
-    color: @syntax-text-color;
+    // color: @syntax-text-color;
+    color: @yellow;
   }
 
   .meta.brace {
@@ -56,8 +57,24 @@
   .variable.other.property {
     color: @syntax-text-color;
   }
+  .variable.other.module {
+    color: @red;
+  }
+
   .variable.parameter {
     color: @syntax-text-color;
+  }
+
+  .variable.language.import-all {
+    color: @red;
+  }
+
+  .variable.other.module-alias {
+    color: @red;
+  }
+
+  .support.variable {
+    color: @magenta;
   }
 
   .regexp {
@@ -76,6 +93,10 @@
   // }
 
   .punctuation.terminator.statement {
+    color: @syntax-text-color;
+  }
+
+  .punctuation.definition.modules {
     color: @syntax-text-color;
   }
 
